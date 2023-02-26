@@ -1,0 +1,19 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 60%;
+    margin: 4rem auto 1rem auto;
+    padding: 1em 1em 4em 1em;
+    font-family: var(--font-titulo);
+    background-color: var(--cor-secundaria);
+    border-radius: .5rem;
+    box-shadow: 6px 6px 16px var(--cor-header);
+    color:var(--cor-texto-titulo);
+}
+.formulario h2{
+    font-size: 3rem;
+    text-align: center;
+    padding: .5em;
+    text-decoration: underline;
+}

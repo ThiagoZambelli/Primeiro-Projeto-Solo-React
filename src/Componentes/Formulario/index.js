@@ -29,9 +29,11 @@ const Formulario = () => {
     ]
 
     return (
-        <div>
+        <div className='formulario'>
+            <h2>Criação de Personagem</h2>
            {inputsParaCriar.map((input) => <Inputs key={input.nome} nome={input.nome} label={input.label} type={input.type} placeholder={input.placeholder} />)}
-            <ListaFlutuante lista={ancestralidades} />
+            <ListaFlutuante lista={ancestralidades} nome={'Ancestralidade'}/>
+            <ListaFlutuante lista={classes} nome={'Classe'}/>
         </div>
     )
 }

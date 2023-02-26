@@ -1,0 +1,14 @@
+.lista-flutuante{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;    
+}
+.lista-flutuante label{
+    font-size: 2rem;
+}
+.lista-flutuante option,.lista-flutuante select{
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: none;
+}

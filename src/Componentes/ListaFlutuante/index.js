@@ -1,14 +1,15 @@
 import './ListaFlutuante.css'
 
-const ListaFlutuante = (lista)=> {
-    const opicoes = lista;
-    console.log(opicoes)
-    return (        
+const ListaFlutuante = (props) => {
 
-        <select>
-            {opicoes.map(item => console.log(item))}
-            {/* {opicoes.map((item)=><option>{item}</option>)}             */}
-        </select>
+    return (
+        <div  className='lista-flutuante'>
+            <label>{props.nome}</label>
+            <select>
+                <option>{""}</option>
+                {props.lista.map((item) => <option key={item}>{item}</option>)}
+            </select>
+        </div>
     )
 }
 
