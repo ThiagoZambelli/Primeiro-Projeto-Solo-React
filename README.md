@@ -1,3 +1,10 @@
+<h1 align="center">Primeiro projeto solo de React -> Pós Primeira aula de React</h1>
+<h2 align="center">Criação de Personangens</h2>
+
+
+
+
+<hr>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
