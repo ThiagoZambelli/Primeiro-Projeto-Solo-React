@@ -1,0 +1,9 @@
+.banner{
+    text-align: center;
+    padding: 2rem;
+    background-color: #A65A2E;    
+}
+.banner img{
+    border-radius: 2rem;
+    box-shadow: 1px 1px 9px #080A0D;
+}
