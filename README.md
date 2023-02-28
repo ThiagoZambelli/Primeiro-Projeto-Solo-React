@@ -3,11 +3,21 @@
 <h1 align="center">Primeiro projeto solo de React -> Pós Primeira aula de React</h1>
 <h2 align="center">Criação de Personangens</h2>
 
+# Projeto Criado por [Thiago Zambelli](https://www.linkedin.com/in/thiagozambelli)
+
 >O projeto consiste em um exercico para treinar os conhecimentos adiquiridos no primeiro curoso de React, por meio de uma aplicação que cards de perssonagesn de RPG
 
+## Formulario de Criação de personagem
 
+> Usando o `useState` dos inputs, foi passados os dados em forma de Objeto para a posterior criação do card com o personagem em questao.
 
+![Alt text](public/img/Formulario%20de%20cria%C3%A7%C3%A3o.png)
 
+## Cards com os personagens criados
+
+> Apos os dados serem coletados foi criado um card com eles usando como variaveis os atributos vindos das listas, como por exemplo: cada classe tem uma imagem e cor de fundo prórpios.
+
+![Alt text](public/img/Cards.png)
 
 <hr>
 # Getting Started with Create React App
