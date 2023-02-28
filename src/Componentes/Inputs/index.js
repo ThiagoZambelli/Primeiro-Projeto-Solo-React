@@ -1,10 +1,18 @@
+
 import './Inputs.css'
 
-const Inputs = ({label, type, placeholder, nome, obrigatorio}) => {
+const Inputs = ({ label, type, placeholder, nome, obrigatorio, valor, aoAlterar }) => {
+
+
+
+    const aoDigitado = (evento) => {
+        aoAlterar(evento.target.value);        
+    }
+
     return (
         <div className='inputs'>
             <label>{label}</label>
-            <input required={obrigatorio} id={nome} type={type} placeholder={placeholder} />
+            <input value={valor} onChange={aoDigitado} required={obrigatorio} type={type} placeholder={placeholder} />
         </div>
     )
 }

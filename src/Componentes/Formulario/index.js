@@ -1,23 +1,11 @@
+import { useState } from 'react'
 import Botao from '../Botao'
 import Inputs from '../Inputs'
 import ListaFlutuante from '../ListaFlutuante'
 import './Formulario.css'
 
 const Formulario = () => {
-    const inputsParaCriar = [
-        {
-            nome: 'nome-personagem',
-            label: 'Nome do Personagem',
-            type: 'text',
-            placeholder: 'Digite o nome do personagem'
-        },
-        {
-            nome: 'nome-jogador',
-            label: 'Nome do Jogador',
-            type: 'text',
-            placeholder: 'Digite o nome do jogador'
-        }
-    ]
+
     const ancestralidades = [
         'Anão',
         'Elfo',
@@ -29,17 +17,52 @@ const Formulario = () => {
         'Ladino'
     ]
 
-    const aoCriar = (event)=>{
-        event.preventDefault();
+    const [nomePersonagem, setNomePersonagem] = useState('');
+    const [nomeJogador, setNomeJogador] = useState('');
+    const [ancestralidade, setAncestralidade] = useState('');
+    const [classe, setClasse] = useState('');
 
+
+    const aoCriar = (event) => {
+        event.preventDefault();
+        console.log(nomeJogador, nomePersonagem, ancestralidade, classe)
     }
 
     return (
         <form className='formulario' onSubmit={aoCriar}>
             <h2>Criação de Personagem</h2>
-            {inputsParaCriar.map((input) => <Inputs obrigatorio={true} key={input.nome} nome={input.nome} label={input.label} type={input.type} placeholder={input.placeholder} />)}
-            <ListaFlutuante obrigatorio={true} lista={ancestralidades} nome={'Ancestralidade'} />
-            <ListaFlutuante obrigatorio={true} lista={classes} nome={'Classe'} />
+            <Inputs
+                obrigatorio={true}
+                nome='nome-personagem'
+                label='Nome do Personagem'
+                type='text'
+                placeholder='Digite o nome do personagem'
+                valor={nomePersonagem}
+                aoAlterar={valor => setNomePersonagem(valor)}
+            />
+            <Inputs
+                obrigatorio={true}
+                nome='nome-jogador'
+                label='Nome do Jogador'
+                type='text'
+                placeholder='Digite o nome do jogador'
+                valor={nomeJogador}
+                aoAlterar={valor => setNomeJogador(valor)}
+            />
+            <ListaFlutuante
+                obrigatorio={true}
+                lista={ancestralidades}
+                nome={'Ancestralidade'}
+                valor={ancestralidade}
+                aoAlterar={valor => setAncestralidade(valor)}
+            />
+            <ListaFlutuante
+                obrigatorio={true}
+                lista={classes}
+                nome={'Classe'}
+                valor={classe}
+                aoAlterar={valor => setClasse(valor)}
+            />
             <Botao>
                 Criar Card
             </Botao>

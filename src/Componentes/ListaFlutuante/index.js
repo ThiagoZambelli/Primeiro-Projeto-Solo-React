@@ -5,7 +5,7 @@ const ListaFlutuante = (props) => {
     return (
         <div  className='lista-flutuante'>
             <label>{props.nome}</label>
-            <select required={props.obrigatorio}>
+            <select onChange={evento => props.aoAlterar(evento.target.value)} required={props.obrigatorio} value={props.valor}>
                 <option>{""}</option>
                 {props.lista.map((item) => <option key={item}>{item}</option>)}
             </select>
