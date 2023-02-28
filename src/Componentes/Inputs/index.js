@@ -1,10 +1,10 @@
 import './Inputs.css'
 
-const Inputs = ({label, type, placeholder, nome}) => {
+const Inputs = ({label, type, placeholder, nome, obrigatorio}) => {
     return (
         <div className='inputs'>
             <label>{label}</label>
-            <input id={nome} type={type} placeholder={placeholder} />
+            <input required={obrigatorio} id={nome} type={type} placeholder={placeholder} />
         </div>
     )
 }

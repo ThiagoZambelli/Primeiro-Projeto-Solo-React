@@ -1,5 +1,10 @@
+![Alt text](public/img/banner.png)
+
 <h1 align="center">Primeiro projeto solo de React -> Pós Primeira aula de React</h1>
 <h2 align="center">Criação de Personangens</h2>
+
+>O projeto consiste em um exercico para treinar os conhecimentos adiquiridos no primeiro curoso de React, por meio de uma aplicação que cards de perssonagesn de RPG
+
 
 
 

@@ -5,7 +5,7 @@ const ListaFlutuante = (props) => {
     return (
         <div  className='lista-flutuante'>
             <label>{props.nome}</label>
-            <select>
+            <select required={props.obrigatorio}>
                 <option>{""}</option>
                 {props.lista.map((item) => <option key={item}>{item}</option>)}
             </select>

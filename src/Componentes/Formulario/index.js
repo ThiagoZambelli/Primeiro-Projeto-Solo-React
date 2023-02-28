@@ -1,3 +1,4 @@
+import Botao from '../Botao'
 import Inputs from '../Inputs'
 import ListaFlutuante from '../ListaFlutuante'
 import './Formulario.css'
@@ -28,13 +29,21 @@ const Formulario = () => {
         'Ladino'
     ]
 
+    const aoCriar = (event)=>{
+        event.preventDefault();
+
+    }
+
     return (
-        <div className='formulario'>
+        <form className='formulario' onSubmit={aoCriar}>
             <h2>Criação de Personagem</h2>
-           {inputsParaCriar.map((input) => <Inputs key={input.nome} nome={input.nome} label={input.label} type={input.type} placeholder={input.placeholder} />)}
-            <ListaFlutuante lista={ancestralidades} nome={'Ancestralidade'}/>
-            <ListaFlutuante lista={classes} nome={'Classe'}/>
-        </div>
+            {inputsParaCriar.map((input) => <Inputs obrigatorio={true} key={input.nome} nome={input.nome} label={input.label} type={input.type} placeholder={input.placeholder} />)}
+            <ListaFlutuante obrigatorio={true} lista={ancestralidades} nome={'Ancestralidade'} />
+            <ListaFlutuante obrigatorio={true} lista={classes} nome={'Classe'} />
+            <Botao>
+                Criar Card
+            </Botao>
+        </form>
     )
 }
 

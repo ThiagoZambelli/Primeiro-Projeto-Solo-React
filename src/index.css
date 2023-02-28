@@ -5,7 +5,9 @@
   --cor-main:#D9D9D9;
   --cor-secundaria:#73614C;
   --cor-header:#A65A2E;
-  --cor-texto-titulo:#171614;
+  --cor-texto-titulo:#2F342D;
+  --branco: #fff;
+  background-color: var(--cor-main);
 }
 
 body {
@@ -16,9 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;  
 }
-main{
-  background-color: var(--cor-main);
-}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
