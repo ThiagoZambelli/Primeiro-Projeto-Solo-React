@@ -4,7 +4,7 @@ import Inputs from '../Inputs'
 import ListaFlutuante from '../ListaFlutuante'
 import './Formulario.css'
 
-const Formulario = () => {
+const Formulario = (props) => {
 
     const ancestralidades = [
         'Anão',
@@ -25,7 +25,13 @@ const Formulario = () => {
 
     const aoCriar = (event) => {
         event.preventDefault();
-        console.log(nomeJogador, nomePersonagem, ancestralidade, classe)
+        props.aoCadastrarPersonagem({
+            nomeJogador,
+            nomePersonagem,
+            ancestralidade,
+            classe
+        })
+        
     }
 
     return (

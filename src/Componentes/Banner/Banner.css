@@ -6,4 +6,5 @@
 .banner img{
     border-radius: 2rem;
     box-shadow: 1px 1px 9px #080A0D;
+    width: 80%;
 }
