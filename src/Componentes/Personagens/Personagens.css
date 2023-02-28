@@ -1,0 +1,9 @@
+.personagens{
+    border-top: 2px dashed black;
+    padding: 2rem 0;
+}
+.personagens h2{
+    text-align: center;
+    font-family: var(--font-titulo);
+    font-size: 5rem;
+}

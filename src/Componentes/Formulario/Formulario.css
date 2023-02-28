@@ -3,7 +3,7 @@
     flex-direction: column;
     row-gap: 2rem;
     width: 60%;
-    margin: 4rem auto 1rem auto;
+    margin: 4rem auto 4rem auto;
     padding: 1em 1em 4em 1em;
     font-family: var(--font-titulo);
     background-color: var(--cor-secundaria);

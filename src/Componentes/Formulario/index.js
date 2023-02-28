@@ -57,14 +57,14 @@ const Formulario = (props) => {
             />
             <ListaFlutuante
                 obrigatorio={true}
-                lista={ancestralidades}
+                lista={props.listaAncestralidades}
                 nome={'Ancestralidade'}
                 valor={ancestralidade}
                 aoAlterar={valor => setAncestralidade(valor)}
             />
             <ListaFlutuante
                 obrigatorio={true}
-                lista={classes}
+                lista={props.listaClasses}
                 nome={'Classe'}
                 valor={classe}
                 aoAlterar={valor => setClasse(valor)}
