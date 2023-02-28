@@ -50,7 +50,10 @@ function App() {
         listaAncestralidades={ancestralidades.map(ancestralidade => ancestralidade.nome)}
         aoCadastrarPersonagem={personagem => setPersonagens([...personagens, personagem])}
       />
-      <Personagens />
+      <Personagens 
+        personagens={personagens}
+        listaClasses={classes}
+      />
     </div>
   );
 }

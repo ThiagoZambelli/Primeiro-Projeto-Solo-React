@@ -1,0 +1,10 @@
+.card{
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 12px black;
+    padding: 1rem;
+}
+.card-cabecalho{
+    display: flex;
+    align-items: center;
+}

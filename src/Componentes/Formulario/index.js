@@ -5,17 +5,7 @@ import ListaFlutuante from '../ListaFlutuante'
 import './Formulario.css'
 
 const Formulario = (props) => {
-
-    const ancestralidades = [
-        'Anão',
-        'Elfo',
-        'Humano'
-    ]
-    const classes = [
-        'Guerreiro',
-        'Mago',
-        'Ladino'
-    ]
+   
 
     const [nomePersonagem, setNomePersonagem] = useState('');
     const [nomeJogador, setNomeJogador] = useState('');
@@ -30,8 +20,7 @@ const Formulario = (props) => {
             nomePersonagem,
             ancestralidade,
             classe
-        })
-        
+        })        
     }
 
     return (

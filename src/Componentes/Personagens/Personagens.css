@@ -7,3 +7,10 @@
     font-family: var(--font-titulo);
     font-size: 5rem;
 }
+.personagens .cards{
+    display: flex;
+    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 2rem;
+}
