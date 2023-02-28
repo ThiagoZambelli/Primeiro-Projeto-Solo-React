@@ -26,3 +26,10 @@ code {
 strong{
   font-weight: bold;
 }
+
+@media screen and (max-width: 800px) {
+ :root{
+  font-size: 10px;
+ }
+  
+}

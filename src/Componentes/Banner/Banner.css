@@ -8,3 +8,15 @@
     box-shadow: 1px 1px 9px #080A0D;
     width: 80%;
 }
+
+@media screen and (max-width: 800px) {
+    
+    .banner{
+        padding: 0;
+    }
+    .banner img{
+     width: 100%;
+     border-radius: 0;
+    }
+     
+   }

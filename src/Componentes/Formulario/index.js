@@ -20,7 +20,11 @@ const Formulario = (props) => {
             nomePersonagem,
             ancestralidade,
             classe
-        })        
+        })
+        setAncestralidade('');
+        setClasse('');
+        setNomeJogador('');
+        setNomePersonagem('');       
     }
 
     return (

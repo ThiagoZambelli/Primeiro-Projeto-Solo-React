@@ -7,4 +7,14 @@
 .card-cabecalho{
     display: flex;
     align-items: center;
+    border-bottom: 3px dashed black ;
+    padding-bottom: 1em;
+}
+.card-cabecalho h3{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+    text-transform: uppercase;  
 }
